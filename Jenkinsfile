@@ -17,6 +17,8 @@ pipeline {
                 echo 'build' 
             }
         }
+        
+        }
         stage('deploy') { 
             steps {
                  script{
