@@ -13,14 +13,14 @@ pipeline {
         }
         stage('build') { 
             steps {
-                script                              
+                script   {                           
                 echo 'build' 
             }
         }
         stage('deploy') { 
             steps {
                  script{
-                    sh 
+                    
                     echo 'Hello deploy'
 
                 }
