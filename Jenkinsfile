@@ -15,6 +15,7 @@ pipeline {
                      sh  """
                     echo 'Hello World'
                     echo ${course}
+                    env
 
                     """
 
