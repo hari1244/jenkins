@@ -8,7 +8,7 @@ pipeline {
         course = 'Jenkins'
     }
     options {
-        timeout(time: 10, unit: 'SECONDS')
+        timeout(time: 10, unit: 'MINUTES')
     }
     
     stages {
@@ -19,7 +19,7 @@ pipeline {
                     echo 'Hello World'
                     echo ${course}
                     env
-                    sleep 10
+                    #sleep 10
 
                     """
 
