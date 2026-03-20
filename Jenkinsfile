@@ -9,6 +9,7 @@ pipeline {
     }
     options {
         timeout(time: 10, unit: 'MINUTES')
+        disableConcurrentBuilds()
     }
     
     stages {
@@ -19,7 +20,7 @@ pipeline {
                     echo 'Hello World'
                     echo ${course}
                     env
-                    #sleep 10
+                    sleep 10
 
                     """
 
