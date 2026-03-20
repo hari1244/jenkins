@@ -2,10 +2,9 @@ pipeline {
     agent {
         node {
             label 'Agent1'
-
         }
-    
     }
+    
     stages {
         stage('testing') { 
             steps {
@@ -23,16 +22,15 @@ pipeline {
             }
         }
     }
-    post{
-        always{
+    post {
+        always {
             echo 'This will always run'
             cleanWs()
-
         }
-        sucess{
+        success {
             echo 'This will run only if the build is successful'
         }
-        failure{
+        failure {
             echo 'This will run only if the build fails'
         }
     }
