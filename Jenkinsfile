@@ -16,7 +16,7 @@ pipeline {
             booleanParam(name: 'isTrue', defaultValue: true, description: 'This is a boolean parameter')
             choice(name: 'choice', choices: ['option1', 'option2', 'option3'], description: 'This is a choice parameter')
         }
-    
+    //this is new project
     
     stages {
         stage('testing') { 
