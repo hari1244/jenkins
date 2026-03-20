@@ -8,33 +8,17 @@ pipeline {
     stages {
         stage('testing') { 
             steps {
-                 script{
-                    sh " " "
-                    echo 'Hello World' 
-                    " " "
-
-                } 
+                echo 'Hello World' 
             }
         }
         stage('build') { 
             steps {
-                script{
-                    sh " " "
-                    echo 'Hello World' 
-                    " " "
-
-                }
-                
+                echo 'Hello World' 
             }
         }
         stage('deploy') { 
             steps {
-                 script{
-                    sh " " "
-                    echo 'Hello World' 
-                    " " "
-
-                }
+                echo 'Hello World' 
             }
         }
     }
