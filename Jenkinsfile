@@ -9,7 +9,7 @@ pipeline {
         stage('testing') { 
             steps {
                  script{
-                    sh " " "
+                    sh  " " "
                     echo 'Hello World'
 
                     " " "
@@ -20,7 +20,7 @@ pipeline {
         stage('build') { 
             steps {
                 script{
-                    sh " " "
+                    sh  " " "
                     echo 'Hello World' 
 
                     " " "
@@ -32,9 +32,9 @@ pipeline {
         stage('deploy') { 
             steps {
                  script{
-                    sh " " "
+                    sh  " " "
                     echo 'Hello World' 
-                    
+
                     " " "
 
                 }
