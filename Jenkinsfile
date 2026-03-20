@@ -10,7 +10,8 @@ pipeline {
             steps {
                  script{
                     sh " " "
-                    echo 'Hello World' 
+                    echo 'Hello World'
+
                     " " "
 
                 } 
@@ -21,6 +22,7 @@ pipeline {
                 script{
                     sh " " "
                     echo 'Hello World' 
+
                     " " "
 
                 }
@@ -32,6 +34,7 @@ pipeline {
                  script{
                     sh " " "
                     echo 'Hello World' 
+                    
                     " " "
 
                 }
