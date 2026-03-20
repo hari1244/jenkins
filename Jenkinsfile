@@ -10,6 +10,11 @@ pipeline {
     options {
         timeout(time: 10, unit: 'MINUTES')
         disableConcurrentBuilds()
+        parameters {
+            string(name: 'name', defaultValue: 'Jenkins', description: 'Enter your name')
+            booleanParam(name: 'isTrue', defaultValue: true, description: 'This is a boolean parameter')
+            choice(name: 'choice', choices: ['option1', 'option2', 'option3'], description: 'This is a choice parameter')
+        }
     }
     
     stages {
@@ -21,6 +26,10 @@ pipeline {
                     echo ${course}
                     env
                     sleep 10
+                    echo " Hello ${params.name}"    
+                    echo "Boolean parameter value: ${params.isTrue}"
+                    echo "Choice parameter value: ${params.choice}"     
+                
 
                     """
 
